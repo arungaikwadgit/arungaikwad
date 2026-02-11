@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Admin | Arun Gaikwad</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="section">
+      <h1>Content Admin</h1>
+      <p class="section-intro">
+        Update case studies and articles as JSON. Changes are stored in your browser localStorage.
+      </p>
+
+      <section class="optional">
+        <h2>Content JSON</h2>
+        <p class="section-intro">
+          Schema: <code>{ "caseStudies": [...], "articles": [...] }</code>
+        </p>
+        <textarea id="content-json" rows="20" style="width: 100%; background:#0b1320; color:#e6edf6; border:1px solid #27344a; border-radius:8px; padding:0.8rem;"></textarea>
+        <div class="cta-row">
+          <button id="save-content" class="btn btn-primary" type="button">Save</button>
+          <button id="reset-content" class="btn btn-secondary" type="button">Reset to defaults</button>
+          <button id="download-content" class="btn btn-secondary" type="button">Download JSON</button>
+          <a class="btn btn-secondary" href="index.html">Back to site</a>
+        </div>
+        <p id="status" class="section-intro" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="admin.js" defer></script>
+  </body>
+</html>
